@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 # ----------------------------------------------------------------------------------------------------------------------
 # Criador por: juanmuscaria
-# Um package tracker para ver (e editar futuramente) as informações
+# Um package tracker para ver e manipular as informações
 # sendo passada entre seu client (jogo talvez) e o servidor
 # Para instalar as bibliotecas use:
 # sudo python -m pip install socket (no Windows acho que é só python -m pip install <lib> em modo administrador)
 # sudo python -m pip install thread
 # sudo python -m pip install colorama
-# acho que o sys e o cmd já vem por padrão,mas se não tiver é só usa o comando acima só que com o sys
-# Eu usei o python 2.7, n faço a menor ideia se vai funcionar no python 3.
+# acho que o sys e o cmd já vem por padrão,mas se não tiver é só usa o comando acima só que com o o nome das libs
+# Eu usei o python 2.7, não faço a menor ideia se vai funcionar no python 3.
 # ----------------------------------------------------------------------------------------------------------------------
 import sys
 import cmd
@@ -107,8 +107,8 @@ def cmdloop(thread):
 #  Boa sorte tentando entender isso tudo.
 init()
 thread.start_new_thread(cmdloop, ("Thread-3", ))  # loop de comando
-server = '142.44.191.70'  # Ip do server que você irá se conectar.
-porta = 26212   # Porta do server que você ira se conectar.
+server = '192.168.15.225'  # Ip do server que você irá se conectar.
+porta = 8080   # Porta do server que você ira se conectar.
 host = (server, porta)
 ShowLog = False
 ioServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
