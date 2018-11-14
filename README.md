@@ -1,2 +1,2 @@
 # Python
-Umas coisas em python
+Umas coisas que eu fiz em python
